@@ -15,6 +15,7 @@ defmodule HomeDisplayRemoteSensor.Application do
         # Children for all targets
         # Starts a worker by calling: HomeDisplayRemoteSensor.Worker.start_link(arg)
         # {HomeDisplayRemoteSensor.Worker, arg},
+        {HomeDisplayRemoteSensor.OneWireReader, []}
       ] ++ children(target())
 
     Supervisor.start_link(children, opts)
