@@ -1,0 +1,35 @@
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    env:
+      HOME_DISPLAY_WIFI_SSID: ""
+      HOME_DISPLAY_WIFI_PSK: ""
+      HOME_DISPLAY_BASE_URL: ""
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-elixir@v1
+        with:
+          otp-version: 23.2.3
+          elixir-version: 1.11.3
+
+      - uses: actions/cache@v1
+        with:
+          path: deps
+          key: ${{ runner.os }}-mix-${{ hashFiles(format('{0}{1}', github.workspace, '/mix.lock')) }}
+          restore-keys: |
+            ${{ runner.os }}-mix-
+
+      - uses: actions/cache@v1
+        with:
+          path: _build
+          key: ${{ runner.os }}-mix-build-${{ hashFiles(format('{0}{1}', github.workspace, '/mix.lock')) }}
+          restore-keys: |
+            ${{ runner.os }}-mix-build-
+
+      - run: mix archive.install hex nerves_bootstrap --force
+      - run: mix deps.get
+      - run: mix test
