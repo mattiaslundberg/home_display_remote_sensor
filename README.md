@@ -1,6 +1,8 @@
 # HomeDisplayRemoteSensor
 
-**TODO: Add description**
+Remote sensor host for [Home Display](https://github.com/mattiaslundberg/home_display), see that repo for more information.
+
+Supports Raspberry PI Zero W (and others with adaptations)
 
 ## Targets
 
