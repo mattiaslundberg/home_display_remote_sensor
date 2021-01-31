@@ -29,6 +29,7 @@
   "shoehorn": {:hex, :shoehorn, "0.7.0", "fc23870fb6b470f5c520fee692637b120a36e163842ab497bbec7e8a1aa6cfe3", [:mix], [], "hexpm", "eeb317ac677b228906039ccf532a582ad9f6d31d7958c98f5c853fe0459e0243"},
   "socket": {:hex, :socket, "0.3.13", "98a2ab20ce17f95fb512c5cadddba32b57273e0d2dba2d2e5f976c5969d0c632", [:mix], [], "hexpm", "f82ea9833ef49dde272e6568ab8aac657a636acb4cf44a7de8a935acb8957c2e"},
   "ssh_subsystem_fwup": {:hex, :ssh_subsystem_fwup, "0.5.1", "b64a41830d4157afb499c8cf04919d15565a94a89a9aea226975528c9919854c", [:mix], [], "hexpm", "60bd847e0d5e707de36a945462cda84175d3cfe654b05bf6c336dab5c886285f"},
+  "stream_data": {:hex, :stream_data, "0.5.0", "b27641e58941685c75b353577dc602c9d2c12292dd84babf506c2033cd97893e", [:mix], [], "hexpm", "012bd2eec069ada4db3411f9115ccafa38540a3c78c4c0349f151fc761b9e271"},
   "system_registry": {:hex, :system_registry, "0.8.2", "df791dc276652fcfb53be4dab823e05f8269b96ac57c26f86a67838dbc0eefe7", [:mix], [], "hexpm", "f7acdede22c73ab0b3735eead7f2095efb2a7a6198366564205274db2ca2a8f8"},
   "toolshed": {:hex, :toolshed, "0.2.18", "5d7c6ef6d4f29fb41f044b4023c3a8c157df538b02ef97bc54181a4f2edea320", [:mix], [{:nerves_runtime, "~> 0.8", [hex: :nerves_runtime, repo: "hexpm", optional: true]}], "hexpm", "5c60fb9480b82b3ba845332bea849a32c69fb8a9917473a0a5dcf1b7357f2163"},
   "uboot_env": {:hex, :uboot_env, "0.3.0", "8afbcc8e5b65e5d0d5660ded2f5835a959d2326fa8683183f380cd6464e75174", [:mix], [], "hexpm", "d8fe5d2b4d52a14398ace02bd604ff7a0fa8960550bb7254f75dcbd438ddc6a1"},
