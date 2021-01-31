@@ -14,6 +14,8 @@ config :shoehorn,
 
 config :nerves_runtime, :kernel, use_system_registry: false
 
+config :nerves, :firmware, fwup_conf: "config/#{Mix.target()}/fwup.conf"
+
 # Erlinit can be configured without a rootfs_overlay. See
 # https://github.com/nerves-project/erlinit/ for more information on
 # configuring erlinit.
