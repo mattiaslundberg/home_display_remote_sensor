@@ -4,6 +4,8 @@ Remote sensor host for [Home Display](https://github.com/mattiaslundberg/home_di
 
 Supports Raspberry PI Zero W (and others with adaptations)
 
+Setup requires setting environment variable for `HOME_DISPLAY_BASE_URL`.
+
 ## Targets
 
 Nerves applications produce images for hardware targets based on the
