@@ -10,7 +10,8 @@ Application.start(:nerves_bootstrap)
 
 config :home_display_remote_sensor, target: Mix.target()
 
-config :home_display_remote_sensor, home_display_base_url: System.fetch_env!("HOME_DISPLAY_BASE_URL")
+config :home_display_remote_sensor,
+  home_display_base_url: System.get_env("HOME_DISPLAY_BASE_URL", "")
 
 # Customize non-Elixir parts of the firmware. See
 # https://hexdocs.pm/nerves/advanced-configuration.html for details.

@@ -67,8 +67,8 @@ config :vintage_net,
          networks: [
            %{
              key_mgmt: :wpa_psk,
-             ssid: System.fetch_env!("HOME_DISPLAY_WIFI_SSID"),
-             psk: System.fetch_env!("HOME_DISPLAY_WIFI_PSK")
+             ssid: System.get_env("HOME_DISPLAY_WIFI_SSID", ""),
+             psk: System.get_env("HOME_DISPLAY_WIFI_PSK", "")
            }
          ]
        },
