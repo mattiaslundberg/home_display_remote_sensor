@@ -2,7 +2,7 @@ defmodule HomeDisplayRemoteSensor.OneWireReader do
   use GenServer
   require Logger
 
-  @wait_between 360_000
+  @wait_between 3_600_000
   @base_url Application.get_env(:home_display_remote_sensor, :home_display_base_url)
 
   def start_link(_) do
