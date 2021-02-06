@@ -37,6 +37,7 @@ defmodule HomeDisplayRemoteSensor.MixProject do
       {:toolshed, "~> 0.2.13"},
       {:jason, "~> 1.2"},
       {:tesla, "~> 1.4.0"},
+      {:one_wire, "~> 0.1.0", git: "https://github.com/mattiaslundberg/one_wire.git"},
 
       # Dependencies for all targets except :host
       {:nerves_runtime, "~> 0.11.3", targets: @all_targets},
